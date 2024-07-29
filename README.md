@@ -10,7 +10,7 @@ const reeseReturnSuccess = (data) => {
         div.innerText=JSON.stringify(data)
         //通过flask提供接口把生成的p值参数保存（有什么好方法可以联系）
         $.ajax({
-		url: "http://127.0.0.1:12184/get_seese84",
+		url: "http://127.0.0.1:****/get_seese84",
 		type: "POST",
 		data: {"data":JSON.stringify(data)},
 		success: function(res) {
